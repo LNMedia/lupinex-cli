@@ -1,0 +1,3 @@
+welcome=Willkommen bei LPX-CLI
+chooseOption=Wähle eine Option:
+exit=Beenden
