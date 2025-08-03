@@ -22,7 +22,9 @@ Through modular expandability and clear structure, the LNX-Cli is aimed at both 
       - [⚙️ Modules \& Scripts](#️-modules--scripts)
       - [🏁 Ready to Roll](#-ready-to-roll)
   - [Technologies](#technologies)
-  - [📄 License \& Project Status](#-license--project-status)
+  - [Available commands](#available-commands)
+  - [Currently planned features](#currently-planned-features)
+  - [License \& Project Status](#license--project-status)
     - [License:](#license)
     - [Project Status: 🚧 Early Development](#project-status--early-development)
 
@@ -139,12 +141,46 @@ This tool, which offers an interactive interface and I18N support, works with on
 
 ---
 
-## 📄 License & Project Status
+## Available commands
+
+Currently only a few commands can really be used:
+- ```bash
+  cleanup
+  clean
+  ```
+  - Scans and deletes all not used files from the file system (e.g. Temp, %Temp %, Prefetch, browser caches of the mostly used browsers and so on).
+- ```bash
+  optimize
+  defrag
+  ```
+  - Scan all locally connected drives and ask individually whether defragmentation or optimization should be carried out.
+    - Important: Please check beforehand whether it is an SSD (optimize) or HDD (defragmentation), otherwise you can break the file system.
+  - After completion (or skip) of the optimization/defragmentation, there is the possibility to let a ChKDSK go through in order to identify and remedy possible errors on the drive
+    - There is the possibility to carry out a normal review or a complete check with restarting the PC.
+- ```bash
+  exit
+  ```
+  - The program simply ends.
+
+More commands are currently still in progress. Please have a little patience and wait for the following updates.
+
+---
+
+## Currently planned features
+
+- better Layout-System
+- Login System with Sessions and "Stay logged in" functionality
+- Planning-Tool and Pass-Manager (all local only)
+- more commands and even more features...
+
+---
+
+## License & Project Status
 
 ### License:
 This project is licensed under the **MIT License** – meaning you're free to use, modify, and distribute the code, as long as the original license and copyright notice remain.
 
-→ See LICENSE.txt for full terms.
+→ See LICENSE for full terms.
 
 ### Project Status: 🚧 Early Development
 LNX-CLI is currently in early development. That means:

@@ -3,15 +3,13 @@
 *.cmd linguist-language=Batchfile
 *.vbs linguist-language=VBScript
 
-# Optional: Force language for .txt language files (if needed)
-bin/i18n/*.txt linguist-language=INI
+*.ini linguist-language=INI
 
 # Normalize line endings (Windows style)
 *.bat text eol=crlf
 *.cmd text eol=crlf
 *.vbs text eol=crlf
-*.txt text eol=crlf
+*.ini text eol=crlf
 
 # Mark scripts as text
 *.ps1 text
-*.json text
